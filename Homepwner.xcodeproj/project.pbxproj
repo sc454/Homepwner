@@ -16,6 +16,7 @@
 		E06158571FB3B395007A0A43 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06158561FB3B395007A0A43 /* ItemsViewController.swift */; };
 		E06158591FB3B613007A0A43 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06158581FB3B613007A0A43 /* Item.swift */; };
 		E061585B1FB3BB92007A0A43 /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E061585A1FB3BB92007A0A43 /* ItemStore.swift */; };
+		E061585D1FB4EFD8007A0A43 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E061585C1FB4EFD8007A0A43 /* ItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		E06158561FB3B395007A0A43 /* ItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
 		E06158581FB3B613007A0A43 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		E061585A1FB3BB92007A0A43 /* ItemStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
+		E061585C1FB4EFD8007A0A43 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				E06158561FB3B395007A0A43 /* ItemsViewController.swift */,
 				E06158581FB3B613007A0A43 /* Item.swift */,
 				E061585A1FB3BB92007A0A43 /* ItemStore.swift */,
+				E061585C1FB4EFD8007A0A43 /* ItemCell.swift */,
 			);
 			path = Homepwner;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				E06158591FB3B613007A0A43 /* Item.swift in Sources */,
 				E061585B1FB3BB92007A0A43 /* ItemStore.swift in Sources */,
 				E06158291FB3B024007A0A43 /* AppDelegate.swift in Sources */,
+				E061585D1FB4EFD8007A0A43 /* ItemCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
