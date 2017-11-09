@@ -18,10 +18,22 @@ class ItemStore{
         return newItem
     }
     
-    init() {
-        for _ in 0..<5{
-            createItem()
+    // To delete a row
+    func removeItem(_ item: Item){
+        if let index = allItems.index(of: item){
+            allItems.remove(at: index)
         }
-        
     }
+    
+    //To move a row
+    func moveItem(from fromIndex:Int, to toIndex: Int){
+        if fromIndex == toIndex {
+            return }
+        let movedItem = allItems[fromIndex]
+        allItems.remove(at: fromIndex)
+        allItems.insert(movedItem, at: toIndex)
+    }
+    
+    
+
 }
