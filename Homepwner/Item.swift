@@ -40,4 +40,20 @@ class Item: NSObject{
             self.init(name: "", serialNumber: nil, valueInDollars: 0)
         }
     }
+    
+    func encode(with aCoder: NSCoder){
+        aCoder.encode(name, forKey: "name")
+        aCoder.encode(serialNumber, forKey: "serialNumber")
+        aCoder.encode(valueInDollars, forKey: "valueInDollars")
+        aCoder.encode(dateCreated, forKey: "dateCreated")
+    }
+    
+    required init(coder aDecoder: NSCoder) {
+        name = aDecoder.decodeObject(forKey: "name") as! String
+        serialNumber = aDecoder.decodeObject(forKey: "serialNumber,") as! String
+        valueInDollars = aDecoder.decodeInteger(forKey: "valueInDollars")
+        dateCreated = aDecoder.decodeObject(forKey: "name") as! Date
+        
+        super.init()
+    }
 }
