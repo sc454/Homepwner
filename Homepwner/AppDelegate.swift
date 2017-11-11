@@ -19,8 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //Create itemstore
         let itemStore = ItemStore()
         
-        //Access the ItemsViewController and set its itemstore property 
-        let itemsController = window!.rootViewController as! ItemsViewController
+        //Access the ItemsViewController and set its itemstore property
+        let navController = window!.rootViewController as! UINavigationController
+        let itemsController = navController.topViewController as! ItemsViewController
         itemsController.itemStore = itemStore
         return true
     }
